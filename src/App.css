@@ -1,9 +1,9 @@
 :root {
-  --primary: #003b6d;
-  --secondary: #6699cc;
-  --tertiary: #676767;
-  --quaternary: #bdbdbd;
-  --quintenary: #003b6d;
+  --primary: #662549;
+  --secondary: #451952;
+  --tertiary: #f39f5a;
+  --quaternary: #662549;
+  --quintenary: #f39f5a;
 }
 
 .App {
@@ -51,10 +51,11 @@ header > img {
 h1 {
   text-align: center;
   width: 100%;
+  color: var(--tertiary);
 }
 
 h2 {
-  color: var(--primary);
+  color: var(--tertiary);
 }
 
 .heading {
@@ -67,7 +68,7 @@ h2 {
 
 .heading > * {
   margin: 0;
-  color: var(--quaternary);
+  color: var(--tertiary);
 }
 
 nav {
@@ -89,7 +90,7 @@ nav {
   padding: 5px;
   font-size: 1vw;
   background-color: var(--quaternary);
-  color: var(--primary);
+  color: var(--tertiary);
   text-decoration: none;
   justify-content: center;
   text-align: center;

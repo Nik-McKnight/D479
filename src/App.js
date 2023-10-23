@@ -19,8 +19,8 @@ function App() {
         ></img>
 
         <div className="heading">
-          <h2>Paradigm Pet Professionals</h2>
-          <h6>Evidence-based pet care advice for every pet lover</h6>
+          <h1>Taniti</h1>
+          <h6>Of all the islands that exist, this is one of them!</h6>
         </div>
       </header>
       <nav>
