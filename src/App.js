@@ -6,6 +6,10 @@ import Dogs from "./Dogs";
 import logo from "./images/PPP.png";
 import Fish from "./Fish";
 import Question from "./Question";
+import Sightseeing from "./Sightseeing";
+import Food from "./Food";
+import Entertainment from "./Entertainment";
+import Transportation from "./Transportation";
 
 function App() {
   return (
@@ -27,16 +31,32 @@ function App() {
         <NavLink className="navLink" activeClassName="selected" to="/">
           Home
         </NavLink>
-        <NavLink className="navLink" activeClassName="selected" to="/cats">
+        <NavLink
+          className="navLink"
+          activeClassName="selected"
+          to="/foodandlodging"
+        >
           Food and Lodging
         </NavLink>
-        <NavLink className="navLink" activeClassName="selected" to="/dogs">
+        <NavLink
+          className="navLink"
+          activeClassName="selected"
+          to="/sightseeing"
+        >
           Sightseeing
         </NavLink>
-        <NavLink className="navLink" activeClassName="selected" to="/birds">
+        <NavLink
+          className="navLink"
+          activeClassName="selected"
+          to="/entertainment"
+        >
           Entertainment
         </NavLink>
-        <NavLink className="navLink" activeClassName="selected" to="/fish">
+        <NavLink
+          className="navLink"
+          activeClassName="selected"
+          to="/transportation"
+        >
           Transportation
         </NavLink>
         <NavLink className="navLink" activeClassName="selected" to="/about">
@@ -46,9 +66,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/D277" element={<Home />}></Route>
-        <Route path="/cats" element={<Cats />}></Route>
-        <Route path="/dogs" element={<Dogs />}></Route>
-        <Route path="/fish" element={<Fish />}></Route>
+        <Route path="/foodandlodging" element={<Food />}></Route>
+        <Route path="/sightseeing" element={<Sightseeing />}></Route>
+        <Route path="/entertainment" element={<Entertainment />}></Route>
+        <Route path="/transportation" element={<Transportation />}></Route>
         <Route path="/about" element={<Question />}></Route>
       </Routes>
       <footer></footer>

@@ -2,7 +2,7 @@ import logo from "./images/PPP.png";
 export default function Question() {
   return (
     <div className="Page">
-      <h2>ABOUT THE COMPANY</h2>
+      <h2>Frequently Asked Questions</h2>
       <img
         className="logo"
         src={logo}

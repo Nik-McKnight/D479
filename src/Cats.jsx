@@ -10,41 +10,6 @@ export default function Cats() {
       <h2>CATS</h2>
       <div className="CatsContent">
         <div>
-          <p>
-            Cats were first domesticated around 7500 BCE in the western Asia
-            region and are currently the second most popular domestic pet in the
-            United States. While there are over 60 unique documented cat breeds,
-            care and diet can differ between breeds. However, some diets and
-            practices are generally recommended for the well-being of your
-            fluffy family member regardless of breed.
-          </p>
-        </div>
-        <img src={cat3} alt="A young cat." />
-      </div>
-      <h2>Dietary Needs By Age</h2>
-      <div className="CatsContent">
-        <img src={cat5} alt="A baby cat." />
-        <div>
-          <h3>Zero to Four Weeks</h3>
-          <p>
-            It is important the queen (a term commonly used for a female cat
-            that is either pregnant or nursing) directly nurse her young if
-            possible. Monitor your kitten’s growth closely to make sure its
-            growth rate is progressing steadily. If any kitten is not growing at
-            a sufficient rate, a caretaker might need to feed the kitten
-            directly either with a bottle or a feeding tube. Some reasons why
-            kittens might not gain weight appropriately include the following:
-            <ul>
-              <li>too many other siblings are competing for mom's milk</li>
-              <li>gastrointestinal disease</li>
-              <li>
-                environmental conditions such as extreme heat or cold, or
-                unsanitary conditions.
-              </li>
-            </ul>
-          </p>
-        </div>
-        <div>
           <h3>Four Weeks to One Year</h3>
           <p>
             Kittens can start being introduced to soft wet kitten food typically
