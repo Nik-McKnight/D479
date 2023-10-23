@@ -1,5 +1,5 @@
 import React from "react";
-import Picture2 from "./images/Picture2.jpg";
+import Picture2 from "./images/st-lucia-getty.jpg";
 import Picture3 from "./images/Picture3.jpg";
 
 export default function Home() {
@@ -7,6 +7,36 @@ export default function Home() {
     <div className="Page">
       <h2>HOME</h2>
       <div className="DogsContent">
+        <img src={Picture2} alt="Tropical Island Landscape." />
+      </div>
+      <div className="DogsContent">
+        <div>
+          <p>
+            Taniti is a small, tropical island in the Pacific. While the island
+            has an area of less than 500 square miles, the terrain is varied and
+            includes both sandy and rocky beaches, a small but safe harbor, lush
+            tropical rainforests, and a mountainous interior that includes a
+            small, active volcano. Taniti has an indigenous population of about
+            20,000.
+          </p>
+        </div>
+      </div>
+      <div className="CatsContent">
+        <div>
+          <p>
+            Looking for basic pet care advice for the most common type of pets?
+            Need additional help determining which type of pet is right for you
+            and your family? We will work with you and provide tailored
+            evidence-based pet care to ensure lifelong health and wellness of
+            your new companion.
+          </p>
+        </div>
+        <img src={Picture3} alt="A one-on-one consultation." />
+
+        <img
+          src={Picture3}
+          alt="A man giving a presentation in a conference room."
+        />
         <div>
           <p>
             Pets are nature's gift to humanity. It has been scientifically
@@ -21,10 +51,6 @@ export default function Home() {
             veterinary, pet shelter, and pet breeding professionals.
           </p>
         </div>
-        <img
-          src={Picture2}
-          alt="A man giving a presentation in a conference room."
-        />
         <div>
           <p>
             Looking for basic pet care advice for the most common type of pets?
@@ -35,70 +61,6 @@ export default function Home() {
           </p>
         </div>
         <img src={Picture3} alt="A one-on-one consultation." />
-        <div>
-          <p>
-            Looking for basic pet care advice for the most common type of pets?
-            Need additional help determining which type of pet is right for you
-            and your family? We will work with you and provide tailored
-            evidence-based pet care to ensure lifelong health and wellness of
-            your new companion.
-          </p>
-        </div>
-        <div>
-          <p>
-            Looking for your new best friend? The following organizations can
-            help you find and adopt the perfect companion:
-            <ul>
-              <li>
-                General Adoption Resources:{" "}
-                <a target="none" href="https://theshelterpetproject.org/">
-                  https://theshelterpetproject.org/
-                </a>
-              </li>
-              <li>
-                ASPCA:{" "}
-                <a target="none" href="https://www.aspca.org/">
-                  https://www.aspca.org/
-                </a>
-              </li>
-              <li>
-                Fish Rescue:{" "}
-                <a
-                  target="none"
-                  href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/"
-                >
-                  https://www.sterlingshelter.org/humane-society/koi-fish-rescue/
-                </a>
-              </li>
-              <li>
-                Snake Rescue:{" "}
-                <a
-                  target="none"
-                  href="https://savethesnakes.org/snakerescuecall/"
-                >
-                  https://savethesnakes.org/snakerescuecall/
-                </a>
-              </li>
-              <li>
-                Bird Rescue:{" "}
-                <a target="none" href="https://ftlob.rescuegroups.org/">
-                  https://ftlob.rescuegroups.org/
-                </a>
-              </li>
-            </ul>
-          </p>
-        </div>
-        <div>
-          <p>
-            We are also happy to help you navigate the adoption process! We will
-            guide you through each step in the process from determining which
-            type of pet is best suited for your family and home environment, to
-            completing the necessary paperwork, to bringing your new loved one
-            home. Please fill out our contact form to request a consultation. We
-            will contact you within 48 hours to schedule a consultation. All
-            fields are required.
-          </p>
-        </div>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ function App() {
 
         <div className="heading">
           <h1>Taniti</h1>
-          <h6>Of all the islands that exist, this is one of them!</h6>
+          <h6>Of all the islands that exist, this is(n't) one of them!</h6>
         </div>
       </header>
       <nav>
@@ -28,26 +28,19 @@ function App() {
           Home
         </NavLink>
         <NavLink className="navLink" activeClassName="selected" to="/cats">
-          Cats
+          Food and Lodging
         </NavLink>
         <NavLink className="navLink" activeClassName="selected" to="/dogs">
-          Dogs
+          Sightseeing
         </NavLink>
         <NavLink className="navLink" activeClassName="selected" to="/birds">
-          Birds
+          Entertainment
         </NavLink>
         <NavLink className="navLink" activeClassName="selected" to="/fish">
-          Fish
-        </NavLink>
-        <NavLink
-          className="navLink"
-          activeClassName="selected"
-          to="/smallanimals"
-        >
-          Small Animals
+          Transportation
         </NavLink>
         <NavLink className="navLink" activeClassName="selected" to="/about">
-          About/Contact
+          FAQ
         </NavLink>
       </nav>
       <Routes>
