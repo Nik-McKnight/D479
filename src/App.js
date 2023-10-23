@@ -1,10 +1,7 @@
 import "./App.css";
 import { Routes, Route, Link, NavLink } from "react-router-dom";
 import Home from "./Home";
-import Cats from "./Cats";
-import Dogs from "./Dogs";
 import logo from "./images/PPP.png";
-import Fish from "./Fish";
 import Question from "./Question";
 import Sightseeing from "./Sightseeing";
 import Food from "./Food";

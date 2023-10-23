@@ -1,5 +1,5 @@
 import React from "react";
-import Picture2 from "./images/st-lucia-getty.jpg";
+import Picture2 from "./images/transportation.jpg";
 import Picture3 from "./images/Picture3.jpg";
 
 export default function Transportation() {
@@ -7,19 +7,7 @@ export default function Transportation() {
     <div className="Page">
       <h2>Transportation</h2>
       <div className="DogsContent">
-        <img src={Picture2} alt="Tropical Island Landscape." />
-      </div>
-      <div className="DogsContent">
-        <div>
-          <p>
-            Taniti is a small, tropical island in the Pacific. While the island
-            has an area of less than 500 square miles, the terrain is varied and
-            includes both sandy and rocky beaches, a small but safe harbor, lush
-            tropical rainforests, and a mountainous interior that includes a
-            small, active volcano. Taniti has an indigenous population of about
-            20,000.
-          </p>
-        </div>
+        <img src={Picture2} alt="Ground Transportation Options." />
       </div>
       <div className="CatsContent">
         <div>
