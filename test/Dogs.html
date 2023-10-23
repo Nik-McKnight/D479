@@ -1,0 +1,370 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/D277/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="A website describing Iowa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&amp;family=Kdam+Thmor+Pro&amp;family=Tektur&amp;display=swap" rel="stylesheet">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/D277/manifest.json">
+    <!--
+      Notice the use of /D277 in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/D277/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Paradigm Pet Partners</title>
+  <script defer="" src="/D277/static/js/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>:root {
+  --primary: #003b6d;
+  --secondary: #6699cc;
+  --tertiary: #676767;
+  --quaternary: #bdbdbd;
+  --quintenary: #003b6d;
+}
+
+.App {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 100px 50px auto 50px;
+  grid-template-areas:
+    "header header header"
+    "navbar navbar navbar"
+    "main main main"
+    "footer footer footer";
+  place-items: center;
+  background-color: var(--quaternary);
+  color: var(--quintenary);
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: var(--primary);
+  color: var(--quaternary);
+  font-size: 20px;
+  justify-content: left;
+  align-items: center;
+}
+
+header > svg {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  position: relative;
+}
+
+header > img {
+  height: 80%;
+  margin-left: 10px;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+
+h2 {
+  color: var(--primary);
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 77%;
+}
+
+.heading > * {
+  margin: 0;
+  color: var(--quaternary);
+}
+
+nav {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--tertiary);
+  gap: 10px;
+}
+
+.navLink {
+  display: inline-block;
+  height: 20px;
+  width: 10%;
+  padding: 5px;
+  font-size: 1vw;
+  background-color: var(--quaternary);
+  color: var(--primary);
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.navLink:hover,
+.active {
+  background-color: var(--secondary) !important;
+  color: var(--quintenary) !important;
+}
+
+.Page {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  min-height: 500px;
+}
+
+.Page > h2 {
+  flex-basis: 10%;
+}
+
+#landscape {
+  width: 90%;
+}
+
+.CatsContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 10px 10px 50px 10px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.CatsContent > div {
+  background-color: var(--secondary);
+  flex-basis: 60%;
+  height: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 450px;
+}
+
+.CatsContent > div > p {
+  margin: 20px;
+}
+
+.CatsContent > img {
+  background-color: var(--secondary);
+  flex-basis: 30%;
+  height: 300px;
+}
+
+.DogsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  margin: 10px 10px 50px 10px;
+  gap: 25px;
+}
+
+.DogsContent > div {
+  background-color: var(--secondary);
+  flex-basis: 100%;
+  height: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 450px;
+  width: 100%;
+}
+
+.DogsContent > div > p {
+  margin: 20px;
+}
+
+.DogsContent > img {
+  background-color: var(--secondary);
+  flex-basis: 30%;
+  height: 300px;
+  width: 450px;
+}
+
+.stateContent {
+  min-width: 400px;
+  flex-basis: 55%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding-bottom: 10px;
+}
+
+.stateAside {
+  min-width: 300px;
+  flex-basis: 40%;
+  background-color: var(--secondary);
+  color: var(--quaternary);
+}
+
+.cityContent {
+  min-width: 400px;
+  flex-basis: 65%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 10px;
+}
+
+.cityAside {
+  min-width: 300px;
+  flex-basis: 100%;
+  background-color: var(--secondary);
+  color: var(--quaternary);
+  padding: 10px;
+}
+
+.trivia {
+  border: 1px solid var(--quaternary);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 10px;
+}
+
+table,
+th,
+td,
+ol {
+  border: 1px solid var(--quaternary);
+  margin: 0 10px 20px;
+}
+
+ul {
+  width: 600px;
+  text-align: start;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--quaternary);
+  background-color: var(--primary);
+}
+
+footer {
+  padding: 10px 0 0 10px;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 3vh;
+  bottom: 0;
+  align-items: flex-start;
+}
+
+.contentLink:link {
+  color: var(--tertiary);
+}
+
+.contentLink:visited {
+  color: var(--tertiary);
+}
+
+.contentLink:hover {
+  color: var(--secondary);
+}
+
+.contentLink {
+  float: left;
+}
+
+.triviaLink:link {
+  color: var(--primary);
+}
+
+.triviaLink:visited {
+  color: var(--primary);
+}
+
+.triviaLink:hover {
+  color: var(--secondary);
+  background-color: var(--quaternary);
+}
+
+.cityImage {
+  width: 400px;
+  height: 400px;
+}
+
+form {
+  background-color: var(--secondary);
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 450px;
+}
+
+form > label {
+  color: var(--quintenary);
+  flex-basis: 125px;
+  text-align: left;
+}
+
+form > input {
+  background-color: var(--quaternary);
+  color: var(--quintenary);
+  flex-basis: 300px;
+}
+form > button {
+  background-color: var(--primary);
+  color: var(--quaternary);
+  box-shadow: none;
+}
+</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><header><img class="logo" src="./images/PPP.png" alt="Paradigm Pet Partners Logo" title="Paradigm Pet Partners Logo"><div class="heading"><h2>Paradigm Pet Professionals</h2><h6>Evidence-based pet care advice for every pet lover</h6></div></header><nav><a activeclassname="selected" class="navLink" href="Home.html" aria-current="page">Home</a><a activeclassname="selected" class="navLink" href="Cats.html">Cats</a><a activeclassname="selected" class="navLink active" href="Dogs.html">Dogs</a><a activeclassname="selected" class="navLink" href="Birds.html">Birds</a><a activeclassname="selected" class="navLink" href="Fish.html">Fish</a><a activeclassname="selected" class="navLink" href="Small.html">Small Animals</a><a activeclassname="selected" class="navLink" href="About.html">About/Contact</a></nav>  
+<div class="Page"><h2>DOGS</h2><div class="DogsContent"><img src="./images/dog1.jpg" alt="A dog."><div><p>The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual benefits between dog and owner. Many studies cite the social benefits of having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators such as <a href="https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.119.005554" target="none">reduced blood pressure and improved lipid profiles</a>. If you have a dog, it is important to make sure that you care for your dog; be mindful of what you feed your dog and provide enough opportunities for exercise. In this page, you will find more information about how to care for your pets throughout the various stages of their lives.</p></div><img src="./images/dog2.jpg" alt="A dog with a stick."><div><h3>Diet &amp; Exercise</h3><p>Throughout dogs’ lifespans, they should generally be fed fewer meals as they mature. Puppies should be nursed the first two months, then introduced to three meals per day when they are about three to six months years old. Their food intake should be reduced to two meals per day when they are six months to one year old and finally reduced to one meal after they reach one year old. And a dog’s typical body mass is composed of somewhere between 60 and 70 percent water. The <a href="https://www.aspca.org/pet-care/dog-care/dog-nutrition-tips" target="none">ASPCA</a> says just a 10 percent decrease in body water can cause illness, and a 15 percent loss can cause death, so make sure you keep your pooch hydrated! Much like humans, dogs need to have a healthy level of activity to keep their organs healthy, as well as sun and fresh air. The minimum recommended time for exercise varies greatly with breed and size differences, but generally a range of 30–120 minutes of exercise is recommended per day! Can you imagine exercising two hours per day? OK, I know that wouldn't bother some of you reading this. But the thought of it to me makes me cringe! And by the way, exercising your dog does not mean you are being challenged to a push-up contest. Brisk walks are OK too! You can also choose from a variety of toys to encourage physical activity; just be sure they are age appropriate and do not pose a choking hazard. Pay careful attention to toys that require supervision.</p></div><img src="./images/dog3.jpg" alt="Two dogs."><div><h3>Grooming &amp; Handling</h3><p>Keeping your furry family member clean is important to its health. So be sure to brush frequently to reduce the amount of shedding and prevent matted and tangled fur that can prove to be extremely difficult to remove. Check for insects such as ticks and fleas, especially after visiting heavily wooded areas. Bathing is not only important to your dog’s health but can be an exercise depending on how strong willed the dog is. Rinse all of the soap out, as any residual soap can result in a rash. Be sure the soap is formulated for your puppy or dog, since harsh soaps can cause allergic reactions. And as always, be careful how you handle your loved one. No matter the size of your dog, you need to be cautious as you carry your canine. If you have a small dog, then cradle the pup with one hand under the chest and the forearm supporting the back half. If it is a large dog, reach under the belly with both your arms perpendicular to the dog, and use each arm to support the chest and rear as you lift.</p></div><div><h3>Vaccinations &amp; Medications</h3><p>You should always consult with your veterinarian, but there is a core set of vaccines that are typically recommended. Vaccines that reduce the exposure risk to things such as hepatitis, rabies, and parvovirus. Others may be determined by your vet depending on the environment in which the dog resides. Some of these include <a target="none" href="https://www.aspca.org/pet-care/general-pet-care/vaccinations-your-pet">Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria.</a></p></div></div></div>
+<footer></footer>
+</body></html>

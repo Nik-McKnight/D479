@@ -1,0 +1,370 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/D277/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="A website describing Iowa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&amp;family=Kdam+Thmor+Pro&amp;family=Tektur&amp;display=swap" rel="stylesheet">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/D277/manifest.json">
+    <!--
+      Notice the use of /D277 in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/D277/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Paradigm Pet Partners</title>
+  <script defer="" src="/D277/static/js/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>:root {
+  --primary: #003b6d;
+  --secondary: #6699cc;
+  --tertiary: #676767;
+  --quaternary: #bdbdbd;
+  --quintenary: #003b6d;
+}
+
+.App {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 100px 50px auto 50px;
+  grid-template-areas:
+    "header header header"
+    "navbar navbar navbar"
+    "main main main"
+    "footer footer footer";
+  place-items: center;
+  background-color: var(--quaternary);
+  color: var(--quintenary);
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: var(--primary);
+  color: var(--quaternary);
+  font-size: 20px;
+  justify-content: left;
+  align-items: center;
+}
+
+header > svg {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  position: relative;
+}
+
+header > img {
+  height: 80%;
+  margin-left: 10px;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+
+h2 {
+  color: var(--primary);
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 77%;
+}
+
+.heading > * {
+  margin: 0;
+  color: var(--quaternary);
+}
+
+nav {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--tertiary);
+  gap: 10px;
+}
+
+.navLink {
+  display: inline-block;
+  height: 20px;
+  width: 10%;
+  padding: 5px;
+  font-size: 1vw;
+  background-color: var(--quaternary);
+  color: var(--primary);
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.navLink:hover,
+.active {
+  background-color: var(--secondary) !important;
+  color: var(--quintenary) !important;
+}
+
+.Page {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  min-height: 500px;
+}
+
+.Page > h2 {
+  flex-basis: 10%;
+}
+
+#landscape {
+  width: 90%;
+}
+
+.CatsContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 10px 10px 50px 10px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.CatsContent > div {
+  background-color: var(--secondary);
+  flex-basis: 60%;
+  height: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 450px;
+}
+
+.CatsContent > div > p {
+  margin: 20px;
+}
+
+.CatsContent > img {
+  background-color: var(--secondary);
+  flex-basis: 30%;
+  height: 300px;
+}
+
+.DogsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  margin: 10px 10px 50px 10px;
+  gap: 25px;
+}
+
+.DogsContent > div {
+  background-color: var(--secondary);
+  flex-basis: 100%;
+  height: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 450px;
+  width: 100%;
+}
+
+.DogsContent > div > p {
+  margin: 20px;
+}
+
+.DogsContent > img {
+  background-color: var(--secondary);
+  flex-basis: 30%;
+  height: 300px;
+  width: 450px;
+}
+
+.stateContent {
+  min-width: 400px;
+  flex-basis: 55%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding-bottom: 10px;
+}
+
+.stateAside {
+  min-width: 300px;
+  flex-basis: 40%;
+  background-color: var(--secondary);
+  color: var(--quaternary);
+}
+
+.cityContent {
+  min-width: 400px;
+  flex-basis: 65%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 10px;
+}
+
+.cityAside {
+  min-width: 300px;
+  flex-basis: 100%;
+  background-color: var(--secondary);
+  color: var(--quaternary);
+  padding: 10px;
+}
+
+.trivia {
+  border: 1px solid var(--quaternary);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 10px;
+}
+
+table,
+th,
+td,
+ol {
+  border: 1px solid var(--quaternary);
+  margin: 0 10px 20px;
+}
+
+ul {
+  width: 600px;
+  text-align: start;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--quaternary);
+  background-color: var(--primary);
+}
+
+footer {
+  padding: 10px 0 0 10px;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 3vh;
+  bottom: 0;
+  align-items: flex-start;
+}
+
+.contentLink:link {
+  color: var(--tertiary);
+}
+
+.contentLink:visited {
+  color: var(--tertiary);
+}
+
+.contentLink:hover {
+  color: var(--secondary);
+}
+
+.contentLink {
+  float: left;
+}
+
+.triviaLink:link {
+  color: var(--primary);
+}
+
+.triviaLink:visited {
+  color: var(--primary);
+}
+
+.triviaLink:hover {
+  color: var(--secondary);
+  background-color: var(--quaternary);
+}
+
+.cityImage {
+  width: 400px;
+  height: 400px;
+}
+
+form {
+  background-color: var(--secondary);
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 450px;
+}
+
+form > label {
+  color: var(--quintenary);
+  flex-basis: 125px;
+  text-align: left;
+}
+
+form > input {
+  background-color: var(--quaternary);
+  color: var(--quintenary);
+  flex-basis: 300px;
+}
+form > button {
+  background-color: var(--primary);
+  color: var(--quaternary);
+  box-shadow: none;
+}
+</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><header><img class="logo" src="./images/PPP.png" alt="Paradigm Pet Partners Logo" title="Paradigm Pet Partners Logo"><div class="heading"><h2>Paradigm Pet Professionals</h2><h6>Evidence-based pet care advice for every pet lover</h6></div></header><nav><a activeclassname="selected" class="navLink" href="Home.html" aria-current="page">Home</a><a activeclassname="selected" class="navLink active" href="Cats.html">Cats</a><a activeclassname="selected" class="navLink" href="Dogs.html">Dogs</a><a activeclassname="selected" class="navLink" href="Birds.html">Birds</a><a activeclassname="selected" class="navLink" href="Fish.html">Fish</a><a activeclassname="selected" class="navLink" href="Small.html">Small Animals</a><a activeclassname="selected" class="navLink" href="About.html">About/Contact</a></nav>  
+<div class="Page"><h2>CATS</h2><div class="CatsContent"><div><p>Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic pet in the United States. While there are over 60 unique documented cat breeds, care and diet can differ between breeds. However, some diets and practices are generally recommended for the well-being of your fluffy family member regardless of breed.</p></div><img src="./images/cat3.jpg" alt="A young cat."></div><h2>Dietary Needs By Age</h2><div class="CatsContent"><img src="./images/cat5.jpg" alt="A baby cat."><div><h3>Zero to Four Weeks</h3><p>It is important the queen (a term commonly used for a female cat that is either pregnant or nursing) directly nurse her young if possible. Monitor your kitten’s growth closely to make sure its growth rate is progressing steadily. If any kitten is not growing at a sufficient rate, a caretaker might need to feed the kitten directly either with a bottle or a feeding tube. Some reasons why kittens might not gain weight appropriately include the following:<ul><li>too many other siblings are competing for mom's milk</li><li>gastrointestinal disease</li><li>environmental conditions such as extreme heat or cold, or unsanitary conditions.</li></ul></p></div><div><h3>Four Weeks to One Year</h3><p>Kittens can start being introduced to soft wet kitten food typically around three to four weeks after birth. According to the <a href="https://www.aspca.org/pet-care/cat-care/cat-nutrition-tips" target="none">ASPCA</a>, kittens at this age should eat half to one cup of dry kitten food or six to nine ounces of wet kitten food per day. If your kitten has difficulties eating hard food, a small amount of water can be added to soften the food. Cat food that is optimized for kittens provides the additional nutrients that are needed for growth, energy, and wellness. Depending on the breed, your cat may have different dietary requirements. You should always consult with your veterinarian for recommendations.</p></div><img src="./images/cat1.jpg" alt="A young cat."><img src="./images/cat2.jpg" alt="An adult cat."><div><h3>One Year to Seven Years</h3><p>This age is when kittens reach the cat stage and do not need as many nutrients. At this age, their level of activity decreases, and so does their metabolism. It is not recommended to leave food out for the cats all day. Instead, provide food a couple times a day so they eat meals rather than snacking throughout the day. This practice reduces the risk of obesity and other weight-related feline ailments.</p></div><div><h3>Seven Years and More</h3><p>Much like many living organisms, the body begins to deteriorate and experience a lot of changes. Cats at this age should eat less fats and calories and more quality proteins. This means when you are purchasing packaged foods for your cat, look for food that states a particular protein (such as "salmon") and not just a category (such as fish). This usually means they are byproducts, or combinations, of lesser quality proteins.</p></div><img src="./images/cat4.jpg" alt="A senior cat."></div></div>
+<footer></footer>
+</body></html>
