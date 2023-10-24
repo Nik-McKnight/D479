@@ -1,5 +1,4 @@
 {
-  "homepage": "nik-mcknight.github.io/D479",
   "name": "d479",
   "version": "0.1.0",
   "private": true,
@@ -42,5 +41,5 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage": "http://Nik-McKnight.github.io/D277"
+  "homepage": "http://Nik-McKnight.github.io/D479"
 }
