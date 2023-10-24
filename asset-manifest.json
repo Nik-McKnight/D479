@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/D479/static/css/main.d50d411d.css",
-    "main.js": "/D479/static/js/main.1e863cf3.js",
+    "main.js": "/D479/static/js/main.efba3894.js",
     "static/media/hotel-restaurant-6-Skyhigh.png": "/D479/static/media/hotel-restaurant-6-Skyhigh.d1d2f019615113e5b32c.png",
     "static/media/Private-Helicopter-Rides.jpg": "/D479/static/media/Private-Helicopter-Rides.186e2ec410ac96e7ef38.jpg",
     "static/media/taxi.jpg": "/D479/static/media/taxi.11659959afa117c3ae2c.jpg",
@@ -23,10 +23,10 @@
     "static/media/grocery.jpg": "/D479/static/media/grocery.fb9fb5f875acadd700e6.jpg",
     "index.html": "/D479/index.html",
     "main.d50d411d.css.map": "/D479/static/css/main.d50d411d.css.map",
-    "main.1e863cf3.js.map": "/D479/static/js/main.1e863cf3.js.map"
+    "main.efba3894.js.map": "/D479/static/js/main.efba3894.js.map"
   },
   "entrypoints": [
     "static/css/main.d50d411d.css",
-    "static/js/main.1e863cf3.js"
+    "static/js/main.efba3894.js"
   ]
 }
