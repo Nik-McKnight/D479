@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Picture2 from "./images/transportation.jpg";
-import Picture3 from "./images/Picture3.jpg";
+import Picture3 from "./images/bus.jpg";
+import Picture4 from "./images/taxi.jpg";
+import Picture5 from "./images/whistler-bike-rental.jpg";
+import { Link } from "react-router-dom";
 
 export default function Transportation() {
+  useEffect(() => {
+    const canControlScrollRestoration = "scrollRestoration" in window.history;
+    if (canControlScrollRestoration) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="Page">
       <h2>Transportation</h2>
@@ -11,44 +23,20 @@ export default function Transportation() {
       </div>
       <div className="CatsContent">
         <div>
-          <p>
-            Looking for basic pet care advice for the most common type of pets?
-            Need additional help determining which type of pet is right for you
-            and your family? We will work with you and provide tailored
-            evidence-based pet care to ensure lifelong health and wellness of
-            your new companion.
-          </p>
+          <p>[Blurb about bus system.]</p>
+          <p>[Link to relevant booking page.]</p>
         </div>
-        <img src={Picture3} alt="A one-on-one consultation." />
-
-        <img
-          src={Picture3}
-          alt="A man giving a presentation in a conference room."
-        />
+        <img src={Picture3} alt="A public bus." />
+        <img src={Picture4} alt="A taxi." />
         <div>
-          <p>
-            Pets are nature's gift to humanity. It has been scientifically
-            proven that opening our homes and hearts to a pet increases our
-            longevity and improves our overall quality of life as well as the
-            lives of our pets. At Pet Paradigm Professionals, our mission is to
-            offer resources to help you care for your furry, scaly, feathery,
-            and slimy loved ones. Our pet experts—or “Pexperts”—have been
-            working with pet owners and professionals alike for the past twelve
-            years. They offer one-on-one consultations with current and
-            prospective pet owners as well as group presentations designed for
-            veterinary, pet shelter, and pet breeding professionals.
-          </p>
+          <p>[Blurb about taxis and rental cars.]</p>
+          <p>[Link to relevant booking page.]</p>
         </div>
         <div>
-          <p>
-            Looking for basic pet care advice for the most common type of pets?
-            Need additional help determining which type of pet is right for you
-            and your family? We will work with you and provide tailored
-            evidence-based pet care to ensure lifelong health and wellness of
-            your new companion.
-          </p>
+          <p>[Blurb about bicycle rentals.]</p>
+          <p>[Link to relevant booking page.]</p>
         </div>
-        <img src={Picture3} alt="A one-on-one consultation." />
+        <img src={Picture5} alt="A bike rental business." />
       </div>
     </div>
   );

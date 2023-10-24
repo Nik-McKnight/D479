@@ -1,57 +1,40 @@
+import { useEffect } from "react";
 import logo from "./images/PPP.png";
 export default function Question() {
+  useEffect(() => {
+    const canControlScrollRestoration = "scrollRestoration" in window.history;
+    if (canControlScrollRestoration) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="Page">
       <h2>Frequently Asked Questions</h2>
-      <img
-        className="logo"
-        src={logo}
-        alt="Paradigm Pet Partners Logo"
-        title="Paradigm Pet Partners Logo"
-        width="500px"
-      ></img>
+      <h2>Travel Questions</h2>
       <div className="DogsContent">
         <div>
           <p>
-            Paradigm Pet Professionals has 12 years’ experience working with pet
-            owners, certifications in pet health and nutrition, and customer
-            recognition for outstanding support
+            [Questions and answers about power plugs, languages spoken, hours
+            where alcohol can be served, holiday hours, currencies accepted,
+            etc.]
           </p>
         </div>
       </div>
-      <h2>SERVICES</h2>
+      <h2>Health and Safety</h2>
       <div className="DogsContent">
         <div>
-          <p>
-            Virtual consultations and presentations, one-on-one consultations
-            concerning individual pets, group presentations regarding general
-            pet care (can be tailored to the needs of the group).
-          </p>
+          <p>[Questions and answers about crime, hospitals, etc]</p>
         </div>
       </div>
       <h2>CONTACT</h2>
       <div className="DogsContent">
-        <form
-          onSubmit={async (e) => {
-            e.preventDefault();
-          }}
-        >
-          <label>Your Name:</label>
-          <input placeholder="Enter Your Name" required={true} />
-          <label>Your Email:</label>
-          <input placeholder="Email" required={true} />
-          <label>Phone Number:</label>
-          <input placeholder="Phone Number" required={true} />
-          <label>Time Zone:</label>
-          <input placeholder="Time Zone" required={true} />
-          <label>Pet's Name:</label>
-          <input placeholder="Pet's name" required={true} />
-          <label>Pet Type:</label>
-          <input placeholder="Pet Type" required={true} />
-          <label>Pet's Age:</label>
-          <input placeholder="Pet's Age" required={true} />
-          <button type="submit">Submit</button>
-        </form>
+        <h2>Any Questions Not Answered Here?</h2>
+        <div>
+          <p>[Form to email the help desk]</p>
+        </div>
       </div>
     </div>
   );

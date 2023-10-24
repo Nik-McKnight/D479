@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Picture2 from "./images/st-lucia-getty.jpg";
-import Picture3 from "./images/Picture3.jpg";
+import Picture3 from "./images/hotel.jpg";
+import Picture4 from "./images/zipline.jpg";
+import Picture5 from "./images/hike.jpg";
+import Picture6 from "./images/transportation.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
+  useEffect(() => {
+    const canControlScrollRestoration = "scrollRestoration" in window.history;
+    if (canControlScrollRestoration) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="Page">
       <h2>HOME</h2>
@@ -23,44 +36,44 @@ export default function Home() {
       </div>
       <div className="CatsContent">
         <div>
-          <p>
-            Looking for basic pet care advice for the most common type of pets?
-            Need additional help determining which type of pet is right for you
-            and your family? We will work with you and provide tailored
-            evidence-based pet care to ensure lifelong health and wellness of
-            your new companion.
-          </p>
+          <p>[Blurb about food and lodging.</p>
+          <Link className="blurblink" to="/foodandlodging">
+            [Link to relevant page.]
+          </Link>
         </div>
-        <img src={Picture3} alt="A one-on-one consultation." />
-
+        <img src={Picture3} alt="A resort next to a beach." />
+        <img src={Picture4} alt="A person ziplining through a rainforest." />
+        <div>
+          <p>[Blurb about entertainment options.]</p>
+          <Link className="blurblink" to="/sightseeing">
+            [Link to relevant page.]
+          </Link>
+        </div>
+        <div>
+          <p>[Blurb about sightseeing around the island.]</p>
+          <Link className="blurblink" to="/entertainment">
+            [Link to relevant page.]
+          </Link>
+        </div>
         <img
-          src={Picture3}
-          alt="A man giving a presentation in a conference room."
+          src={Picture5}
+          alt="A family looking at a waterfall in the jungle."
         />
+        <img src={Picture6} alt="Ground transportation options." />
         <div>
-          <p>
-            Pets are nature's gift to humanity. It has been scientifically
-            proven that opening our homes and hearts to a pet increases our
-            longevity and improves our overall quality of life as well as the
-            lives of our pets. At Pet Paradigm Professionals, our mission is to
-            offer resources to help you care for your furry, scaly, feathery,
-            and slimy loved ones. Our pet experts—or “Pexperts”—have been
-            working with pet owners and professionals alike for the past twelve
-            years. They offer one-on-one consultations with current and
-            prospective pet owners as well as group presentations designed for
-            veterinary, pet shelter, and pet breeding professionals.
-          </p>
+          <p>[Blurb about transportation options.]</p>
+          <Link className="blurblink" to="/transportation">
+            [Link to relevant page.]
+          </Link>
         </div>
+      </div>
+      <div className="DogsContent">
         <div>
-          <p>
-            Looking for basic pet care advice for the most common type of pets?
-            Need additional help determining which type of pet is right for you
-            and your family? We will work with you and provide tailored
-            evidence-based pet care to ensure lifelong health and wellness of
-            your new companion.
-          </p>
+          <p>Questions?</p>
+          <Link className="blurblink" to="/about">
+            [Link to FAQ page.]
+          </Link>
         </div>
-        <img src={Picture3} alt="A one-on-one consultation." />
       </div>
     </div>
   );
