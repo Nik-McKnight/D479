@@ -17,7 +17,7 @@ export default function Sightseeing() {
 
   return (
     <div className="Page">
-      <h2>Sightseeing</h2>
+      <h2>Entertainment</h2>
       <div className="DogsContent">
         <img src={Picture2} alt="People snorkelling." />
       </div>
